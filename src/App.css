@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  background-color: hsl(193, 100%, 96%);
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+header button {
+  border: none;
+  border-radius: 20px;
+  width: 10rem;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.39);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 2.3rem;
+}
+
+.try-free-button {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.try-free-button:hover {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+}
+
+main,
+.sub-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.39);
+  margin: 2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: hsl(192, 100%, 9%);
+}
+
+.principal {
+  width: 90%;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 2em;
+}
+
+.principal button,
+.invitation button {
+  border: none;
+  border-radius: 25px;
+  width: 15rem;
+  height: 2.7rem;
+  cursor: pointer;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.39);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: hsl(193, 100%, 96%);
+}
+
+.principal button:hover {
+  background-color: hsl(0, 71%, 58%);
+  color: black;
+}
+
+.invitation button:hover {
+  background-color: hsl(0, 71%, 58%);
+  color: black;
+}
+
+.principal p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+article img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+article section {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: hsl(192, 100%, 9%);
+}
+
+.invitation {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.39);
+  margin: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: hsl(192, 100%, 9%);
+  gap: 1rem;
+  transform: translateY(2rem);
+  z-index: 1;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+footer{
+  background-color: hsl(192deg 49.3% 19.4%);
+  z-index: -1;
+  padding: 0 5em 5em 6em;
+  padding-top: 10rem;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+footer .central{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.first-column{
+  width: 35%;
+}
+
+.first-column img{
+  margin-right: 1rem;
+  
+}
+
+.last-columns{
+
+  width: 15%;
+}
+
+.central section{
+  margin-right: 4rem;
+}
+ul{
+  line-height: 3rem;
+}
+li{
+  list-style:none;
+}
+
+.social-media{
+  padding-right: 0;
+}
+
+.social-media ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media li{
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  
+}
+
+i{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1em;
+  }
+
+  header button {
+    width: 8rem;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+
+  main,
+  .sub-main {
+    margin: 0;
+  }
+
+  article {
+    margin: 1em;
+    font-size: 1rem;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .invitation {
+    width: 80%;
+  }
+ 
+    footer {
+      padding: 0 1em 3em 1em;
+    }
+    footer .foot-image{
+      margin-bottom: 2rem;
+    }
+  
+    footer .central {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .first-column {
+      width: 100%;
+    }
+  
+   
+  
+    .last-columns {
+      width: 100%;
+      margin-top: 2em;
+    }
+  
+    .central section {
+      margin-right: 0; 
+      margin-top:1.6rem;
+    }
+  
+    ul {
+      line-height: 1.5rem; /* Adjusted line height for better spacing */
+    }
+  
+    .social-media ul {
+      margin-top: 1em;
+    }
+    
+  }
+  
