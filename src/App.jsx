@@ -25,13 +25,13 @@ function App() {
   return (
     <div className="App">
     <header className="top" style={{display:'flex',flexDirection:'column'}}>
-      <div className='a'style={{display:'flex',justifyContent:'space-between',marginBottom:'4rem'}}>
+      <div className='a'style={{display:'flex',justifyContent:'space-between',marginBottom:'4rem',marginLeft:'3rem'}}>
       <img src={logo} alt="Logo" style={{width:'130px',height:'26px'}} />
       <button style={{lineHeight:'2.3rem'}} onClick={handleTryItFreeClick} className="try-free-button">Try It Free</button>
       </div>
       <main> 
         <article className="principal">
-          <section>
+          <section style={{marginRight:'5rem'}}>
             <h1>Build The Community Your Fans Will Love</h1>
             <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
             <button onClick={handleGetStartedClick}>Get Started For Free</button>
@@ -42,21 +42,21 @@ function App() {
     </header>
       <div className="sub-main">
         <article>
-          <section>
+          <section style={{marginLeft:'2rem'}}>
             <h2>Grow Together</h2>
             <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
           </section>
           <img src={growtogether} alt="Illustration" />
         </article>
         <article>
-          <section>
+          <section style={{marginLeft:'2rem'}}>
             <h2>Flowing Conversations</h2>
             <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
           </section>
           <img src={flowingConversation} alt="Illustration" />
         </article>
         <article>
-          <section>
+          <section style={{marginLeft:'2rem'}}>
             <h2>Your Users</h2>
             <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
           </section>
